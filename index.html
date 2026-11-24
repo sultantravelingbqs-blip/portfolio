@@ -3,125 +3,149 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#080b16" />
-  <meta name="description" content="The personal portfolio of M. Asad — a web design learner from Rahim Yar Khan, Pakistan." />
-  <title>M. Asad | Personal Portfolio</title>
+  <meta name="theme-color" content="#c84d49" />
+  <meta name="description" content="M. Asad — aspiring web designer from Rahim Yar Khan, Pakistan. Explore my learning journey, interests and practice concepts." />
+  <title>M. Asad — Creative Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800;900&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="page-glow page-glow-one" aria-hidden="true"></div>
-  <div class="page-glow page-glow-two" aria-hidden="true"></div>
-  <div class="noise" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
   <header class="site-header" id="top">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="M. Asad home"><span class="brand-mark">A.</span><span>M. Asad<span class="brand-dot">.</span></span></a>
+    <div class="topline container">
+      <a class="brand" href="#home" aria-label="M. Asad, home">M. ASAD<span class="brand-dot">.</span></a>
+      <span class="topline-rule" aria-hidden="true"></span>
+      <span class="topline-note">CREATIVE PORTFOLIO</span>
       <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span>
       </button>
-      <div class="nav-links" id="navLinks">
-        <a class="nav-link active" href="#home">Home</a>
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#skills">Skills</a>
-        <a class="nav-link" href="#projects">Portfolio</a>
-        <a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
-      </div>
-    </nav>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero section container" id="home">
-      <div class="hero-copy">
-        <div class="eyebrow reveal"><span class="status-dot"></span> HELLO, WORLD — WELCOME TO MY SPACE</div>
-        <h1 class="hero-title reveal">I'm <span class="gradient-text">M. Asad</span><br />I love making the<br /><span class="typed-line"><span id="typedText">web look beautiful</span><span class="typing-cursor">|</span></span></h1>
-        <p class="hero-description reveal">A curious learner from Rahim Yar Khan, Pakistan. I have passed Matric and I'm excited to explore the creative world of web design.</p>
-        <div class="hero-actions reveal">
-          <a class="button button-primary" href="#projects">Explore my portfolio <span aria-hidden="true">↗</span></a>
-          <a class="button button-quiet" href="#about"><span class="play-icon" aria-hidden="true">↓</span> Get to know me</a>
-        </div>
-        <div class="hero-meta reveal">
-          <div class="meta-item"><span class="meta-label">BASED IN</span><span class="meta-value"><span class="pin-icon" aria-hidden="true">⌖</span> Rahim Yar Khan, PK</span></div>
-          <div class="meta-divider"></div>
-          <div class="meta-item"><span class="meta-label">CURRENT FOCUS</span><span class="meta-value">Learning Web Design</span></div>
-        </div>
-      </div>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-inner container">
+        <div class="hero-overline"><span>RAHIM YAR KHAN, PAKISTAN</span><span>WEB DESIGN • LEARNING • CREATIVITY</span></div>
+        <div class="hero-word" aria-hidden="true"><span>PORT</span><span class="word-dark">FOLIO</span></div>
 
-      <div class="hero-visual reveal" aria-label="Decorative profile card">
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
-        <div class="floating-chip chip-top"><span class="chip-icon">✳</span> Creative mind</div>
-        <div class="profile-card">
-          <div class="card-topline"><span>PERSONAL PROFILE</span><span class="live-indicator"><i></i> ONLINE</span></div>
-          <div class="avatar-wrap"><div class="avatar-halo"></div><div class="avatar">M<span>.</span>A</div><div class="avatar-star">✦</div></div>
-          <h2>M. Asad</h2>
-          <p class="profile-role">Aspiring Web Designer</p>
-          <div class="card-line"></div>
-          <div class="profile-details"><span>Education</span><strong>Matric Passed</strong></div>
-          <div class="profile-details"><span>Location</span><strong>Rahim Yar Khan</strong></div>
-          <div class="profile-details"><span>Interest</span><strong>Web Design & UI</strong></div>
-          <div class="profile-footer"><span class="mini-bars"><i></i><i></i><i></i><i></i><i></i></span><span>ALWAYS LEARNING</span></div>
-        </div>
-        <div class="floating-chip chip-bottom"><span class="sparkle-icon">✦</span> Ideas into interfaces</div>
-        <div class="visual-cross cross-one">+</div><div class="visual-cross cross-two">+</div>
-      </div>
-      <a href="#about" class="scroll-cue" aria-label="Scroll to about section"><span></span> SCROLL TO EXPLORE</a>
-    </section>
+        <div class="hero-composition">
+          <div class="hero-art" aria-label="Decorative monogram artwork for M. Asad">
+            <div class="art-orbit orbit-a"></div>
+            <div class="art-orbit orbit-b"></div>
+            <div class="art-disc"></div>
+            <div class="art-initials">M<span>.</span>A</div>
+            <div class="art-caption caption-left">CREATIVE<br />MINDSET</div>
+            <div class="art-caption caption-bottom">ALWAYS LEARNING — ALWAYS GROWING</div>
+            <span class="art-cross cross-one">+</span><span class="art-cross cross-two">✳</span>
+          </div>
 
-    <section class="section about-section" id="about">
-      <div class="container section-inner">
-        <div class="section-heading reveal"><span class="section-kicker">01 / ABOUT ME</span><h2>A little about <span class="gradient-text">who I am.</span></h2></div>
-        <div class="about-grid">
-          <div class="about-intro reveal"><p class="large-copy">I'm at the beginning of my digital journey, and <span class="highlight">I'm ready to learn, experiment, and create.</span></p><p class="body-copy">I have completed my Matric education and live in Rahim Yar Khan. Web design interests me because it brings creativity and technology together. My goal is to learn how to build clean, modern, and user-friendly websites.</p><p class="body-copy">This portfolio is my starting point — a place to introduce myself and share my progress as I grow.</p></div>
-          <div class="about-facts reveal">
-            <div class="fact-card"><span class="fact-number">01</span><div><span class="fact-label">EDUCATION</span><h3>Matric Passed</h3><p>My completed education</p></div><span class="fact-symbol">↗</span></div>
-            <div class="fact-card"><span class="fact-number">02</span><div><span class="fact-label">LOCATION</span><h3>Rahim Yar Khan</h3><p>Punjab, Pakistan</p></div><span class="fact-symbol">⌖</span></div>
-            <div class="fact-card"><span class="fact-number">03</span><div><span class="fact-label">INTEREST</span><h3>Web Designing</h3><p>Creative digital experiences</p></div><span class="fact-symbol">✳</span></div>
+          <div class="hero-copy">
+            <p class="script-name">M. Asad</p>
+            <h1 id="hero-title">ASPIRING<br /><span>WEB DESIGNER</span></h1>
+            <div class="hero-rule"></div>
+            <p class="hero-description">I’m learning to turn ideas into clean, thoughtful digital experiences. This is where I share what inspires me and what I’m building next.</p>
+            <a class="hero-link" href="#about">DISCOVER MY JOURNEY <span aria-hidden="true">↓</span></a>
           </div>
         </div>
+        <div class="hero-side-note"><span>01</span><span>IDEAS INTO<br />INTERFACES</span></div>
       </div>
     </section>
 
-    <section class="section skills-section" id="skills">
-      <div class="container section-inner">
-        <div class="section-heading reveal"><span class="section-kicker">02 / WHAT I'M EXPLORING</span><h2>Learning one step <span class="gradient-text">at a time.</span></h2><p class="section-subtitle">These are the web technologies I'm interested in learning and improving.</p></div>
-        <div class="skills-grid">
-          <article class="skill-card reveal"><div class="skill-card-top"><span class="skill-icon html-icon">5</span><span class="skill-index">01</span></div><h3>HTML</h3><p>Building the structure and content of web pages.</p><div class="skill-status"><span>Learning path</span><span class="status-pill">Exploring</span></div><div class="skill-track"><span style="--level: 72%"></span></div></article>
-          <article class="skill-card reveal"><div class="skill-card-top"><span class="skill-icon css-icon">✦</span><span class="skill-index">02</span></div><h3>CSS</h3><p>Creating layouts, colors, animations, and visual style.</p><div class="skill-status"><span>Learning path</span><span class="status-pill">Exploring</span></div><div class="skill-track"><span style="--level: 58%"></span></div></article>
-          <article class="skill-card reveal"><div class="skill-card-top"><span class="skill-icon js-icon">JS</span><span class="skill-index">03</span></div><h3>JavaScript</h3><p>Adding interaction and useful behavior to websites.</p><div class="skill-status"><span>Learning path</span><span class="status-pill">Exploring</span></div><div class="skill-track"><span style="--level: 32%"></span></div></article>
+    <section class="explore-band" aria-label="Portfolio navigation">
+      <div class="band-inner container">
+        <div class="band-nav-label">EXPLORE</div>
+        <nav class="band-links" aria-label="Explore sections">
+          <a href="#about"><span>01</span> ABOUT ME <b>↗</b></a>
+          <a href="#skills"><span>02</span> SKILLS <b>↗</b></a>
+          <a href="#projects"><span>03</span> PROJECTS <b>↗</b></a>
+          <a href="#contact"><span>04</span> CONTACT <b>↗</b></a>
+        </nav>
+        <div class="band-mantra"><span>Learn.</span><span>Design.</span><span>Create.</span></div>
+        <div class="band-aside"><span>IDEAS</span><span>DESIGN</span><span>DETAILS</span><span>EXPERIENCES</span><i></i><small>OPEN TO LEARNING<br />AND NEW IDEAS</small></div>
+      </div>
+    </section>
+
+    <section class="intro-section" id="about">
+      <div class="container intro-grid">
+        <div class="intro-title-block">
+          <span class="section-kicker">HELLO, I'M</span>
+          <h2><span>M.</span><br />ASAD</h2>
+          <div class="intro-short-rule"></div>
+          <p class="intro-role">ASPIRING WEB DESIGNER<br />CURIOUS CREATOR</p>
         </div>
-        <p class="skills-note reveal"><span>✳</span> Progress bars are visual design elements, not verified skill ratings.</p>
-      </div>
-    </section>
-
-    <section class="section projects-section" id="projects">
-      <div class="container section-inner">
-        <div class="section-heading project-heading reveal"><div><span class="section-kicker">03 / MY PORTFOLIO</span><h2>Ideas I'm excited <span class="gradient-text">to build.</span></h2></div><span class="coming-soon">MY JOURNEY STARTS HERE <i>↘</i></span></div>
-        <div class="projects-grid">
-          <article class="project-card project-large reveal"><div class="project-art art-one"><div class="mock-window"><div class="mock-top"><i></i><i></i><i></i><span>my-portfolio.site</span></div><div class="mock-content"><div class="mock-side"><b></b><b></b><b></b></div><div class="mock-main"><span class="mock-tag">HELLO THERE</span><div class="mock-title">Design<br /><em>your story.</em></div><div class="mock-button"></div><div class="mock-circle"></div></div></div></div><span class="art-caption">01 — PERSONAL BRAND</span></div><div class="project-info"><div><span class="project-type">PRACTICE IDEA</span><h3>Personal Portfolio Website</h3><p>A simple, stylish website to introduce myself and present my work.</p></div><span class="project-arrow">↗</span></div></article>
-          <article class="project-card reveal"><div class="project-art art-two"><div class="mobile-mock"><div class="mobile-camera"></div><div class="mobile-label">GOOD DESIGN<br /><strong>FEELS SIMPLE.</strong></div><div class="mobile-shapes"><i></i><i></i><i></i></div><div class="mobile-bottom"></div></div><span class="art-caption">02 — MOBILE FIRST</span></div><div class="project-info"><div><span class="project-type">PRACTICE IDEA</span><h3>Mobile Landing Page</h3><p>A clean layout designed for smaller screens.</p></div><span class="project-arrow">↗</span></div></article>
-          <article class="project-card reveal"><div class="project-art art-three"><div class="color-board"><div class="color-block block-a"></div><div class="color-block block-b"></div><div class="color-block block-c"></div><div class="color-block block-d"></div><span>COLOR / TYPE / LAYOUT</span></div><span class="art-caption">03 — VISUAL STYLE</span></div><div class="project-info"><div><span class="project-type">PRACTICE IDEA</span><h3>Creative UI Exploration</h3><p>Experimenting with colors, typography, and modern interfaces.</p></div><span class="project-arrow">↗</span></div></article>
+        <div class="intro-copy">
+          <span class="section-number">01 / ABOUT ME</span>
+          <p class="intro-lead">At the beginning of my digital journey, with a mind full of ideas and a lot still to learn.</p>
+          <p>I have completed my Matric education and live in Rahim Yar Khan, Pakistan. Web design interests me because it brings creativity and technology together. I’m working towards understanding how to create clean, modern and user-friendly websites.</p>
+          <p>This portfolio is my starting point — a place to introduce myself, explore design, and share my progress as I grow.</p>
+          <div class="intro-facts">
+            <div><span>EDUCATION</span><strong>Matric Passed</strong></div>
+            <div><span>BASED IN</span><strong>Punjab, Pakistan</strong></div>
+            <div><span>FOCUS</span><strong>Web Design</strong></div>
+          </div>
         </div>
-        <p class="portfolio-disclaimer reveal">These are practice concepts and future project ideas, not completed client projects.</p>
+        <div class="intro-orbit" aria-hidden="true"><span></span><i></i></div>
       </div>
     </section>
 
-    <section class="section contact-section" id="contact">
-      <div class="container contact-panel reveal">
-        <div class="contact-decoration decoration-a"></div><div class="contact-decoration decoration-b"></div>
-        <span class="section-kicker">04 / THE NEXT CHAPTER</span>
-        <h2>Let's make something<br /><span class="gradient-text">great together.</span></h2>
-        <p>I'm excited to keep learning web design, explore new ideas, and connect with creative people.</p>
-        <a class="button button-primary contact-button" href="#top">Back to top <span aria-hidden="true">↑</span></a>
-        <div class="contact-bottom"><span>MADE WITH CURIOSITY BY M. ASAD</span><span>RAHIM YAR KHAN, PAKISTAN <i>✦</i></span></div>
+    <section class="skills-section section-pad" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="section-number">02 / WHAT I'M EXPLORING</span><h2>Curiosity into<br /><em>capability.</em></h2></div>
+          <p>These are the foundations I’m exploring as I learn how websites are structured, styled and brought to life.</p>
+        </div>
+        <div class="skills-list">
+          <article class="skill-row"><span class="skill-index">01</span><div class="skill-name">HTML</div><p>Page structure, content and semantic building blocks.</p><span class="skill-state">EXPLORING</span><span class="skill-arrow">↗</span></article>
+          <article class="skill-row"><span class="skill-index">02</span><div class="skill-name">CSS</div><p>Layout, typography, responsive design and visual style.</p><span class="skill-state">EXPLORING</span><span class="skill-arrow">↗</span></article>
+          <article class="skill-row"><span class="skill-index">03</span><div class="skill-name">JavaScript</div><p>Interactivity and useful behaviour for the web.</p><span class="skill-state">EXPLORING</span><span class="skill-arrow">↗</span></article>
+        </div>
+        <p class="skills-footnote">A learning journey, not a list of professional skill ratings.</p>
       </div>
+    </section>
+
+    <section class="projects-section section-pad" id="projects">
+      <div class="container">
+        <div class="section-head project-head">
+          <div><span class="section-number">03 / PRACTICE & IDEAS</span><h2>Made of ideas.<br /><em>Made to learn.</em></h2></div>
+          <p>These are practice concepts and directions I’m interested in exploring. They are not presented as completed client projects.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-feature">
+            <div class="project-visual visual-portfolio"><div class="mini-browser"><div class="mini-browser-top"><i></i><i></i><i></i><span>MY PORTFOLIO</span></div><div class="mini-browser-body"><small>PERSONAL BRAND</small><strong>Make your<br /><em>story visible.</em></strong><b></b></div></div><span class="visual-index">01 — WEB</span></div>
+            <div class="project-meta"><div><span>PRACTICE CONCEPT</span><h3>Personal Portfolio</h3><p>A simple home for a personal story, interests and work.</p></div><span class="project-number">01</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-mobile"><div class="phone-shape"><div class="phone-notch"></div><small>GOOD DESIGN</small><strong>FEELS<br />SIMPLE.</strong><div class="phone-blocks"><i></i><i></i><i></i></div></div><span class="visual-index">02 — RESPONSIVE</span></div>
+            <div class="project-meta"><div><span>PRACTICE CONCEPT</span><h3>Mobile Landing Page</h3><p>A clear layout imagined for smaller screens.</p></div><span class="project-number">02</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-identity"><div class="color-study"><i></i><i></i><i></i><i></i><span>COLOR / TYPE / FORM</span></div><span class="visual-index">03 — VISUAL STUDY</span></div>
+            <div class="project-meta"><div><span>PRACTICE CONCEPT</span><h3>Creative UI Exploration</h3><p>Exploring how colors, type and shapes work together.</p></div><span class="project-number">03</span></div>
+          </article>
+        </div>
+        <p class="project-note">As real projects are completed, this section can be updated with screenshots, links and project details.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-topline container"><span>04 / THE NEXT CHAPTER</span><span>LET'S KEEP CREATING</span></div>
+      <div class="contact-inner container">
+        <div class="contact-copy"><p class="contact-script">One step at a time.</p><h2>Ideas grow<br /><em>when shared.</em></h2><p>I’m here to learn, explore new ideas and keep building my skills in web design.</p><a href="#home" class="contact-link">BACK TO TOP <span aria-hidden="true">↑</span></a></div>
+        <div class="contact-mark" aria-hidden="true"><span>MA</span><i></i><b>✳</b></div>
+      </div>
+      <footer class="footer container"><a class="footer-brand" href="#home">M. ASAD<span>.</span></a><span>RAHIM YAR KHAN, PAKISTAN</span><span>© <span id="year"></span> — PERSONAL PORTFOLIO</span></footer>
     </section>
   </main>
-
-  <footer class="footer container"><a class="brand footer-brand" href="#top"><span class="brand-mark">A.</span><span>M. Asad<span class="brand-dot">.</span></span></a><span>© <span id="year"></span> M. Asad. Personal portfolio.</span><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
 </body>
 </html>
